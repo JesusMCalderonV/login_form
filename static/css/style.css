@@ -1,0 +1,249 @@
+@keyframes parpadear{
+    0%{
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.815);
+    }
+    100%{
+        box-shadow: 0 0 0 20px rgba(0, 0, 0, 0);
+    }
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+header{
+    background: rgb(140, 7, 158);
+    height: 8vh;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    position: fixed;
+    z-index: 999;
+    width: 100vw;
+    box-shadow: 0 4px rgba(0, 0, 0, 0.4);
+}   
+
+.barra_navegacion{
+    text-align: end;
+}
+
+.descripcion{
+    color: rgb(233, 232, 232);
+    padding: 4px;
+}
+
+.link{
+    list-style: none;
+    display: inline-block;
+    font-size: 3vh;
+    padding: 1.98vh;
+    border: 2px solid rgba(255, 255, 255, 0);
+}
+
+.link:hover{
+    border: 2px solid #fff;
+    transition: all 1.5s ease;
+    cursor: pointer;
+}
+
+.link > a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.titulo > a{
+    color: #fff;
+    text-decoration: none;
+}
+
+
+.titulo{
+    list-style: none;
+    margin-top: 2.5vh;
+    margin-left: 1em;
+}
+
+.whatsapp_espace{
+    text-align: center;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    z-index: 999;
+    background: rgb(140, 7, 158);
+    border-radius: 50px;
+    bottom: 20px;
+    margin-left: 94%;
+    transition: ease 0.5s;
+    animation: parpadear 1.2s infinite;
+}
+
+.whatsapp_espace:hover{
+    cursor: pointer;
+}
+
+.icon_what{
+    margin-top: 6px;
+    height: 48px;
+}
+
+.portada{
+    width: 100%;
+}
+
+hr{
+    margin: 10px;
+}
+
+.conoceme h2, h3{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.conoceme{
+    background: rgb(140, 7, 158);
+    margin: 20px;
+    border-radius: 5px;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.conoceme p{
+    color: #fff;
+    margin: 0 5px;
+    text-align: center;
+    padding: 10px;
+}
+
+.seccion_juegos h2{
+    text-align: center;
+}
+
+.contenedor_juegos{
+    display: grid;
+    grid-template-columns: 23.5% 23.5% 23.5% 23.5%;
+    column-gap: 1%;
+    row-gap: 5%;
+    margin-left: 3%;
+    margin: 10vh;
+}
+
+.juego{
+    height: max-content;
+    text-align: center;
+    border: 1px solid rgb(7, 60, 158);
+    background: rgb(233, 232, 232);
+    border-radius: 5px;
+}
+
+.juego h2{
+    color: rgb(7, 60, 158);
+}
+
+.juego:hover{
+    transform: scale(1.15);
+    transition: 1.5s all ease;
+    transition-delay: .1s;
+    box-shadow: 8px 8px rgba(0, 0, 0, 0.4);
+}
+
+.juego:hover .descripcion{
+    transition: all 1s;
+    color: black;
+}
+
+.portada_juego{
+    width: 95%;
+    margin-top: 12px;
+    border-radius: 5px;
+}
+
+.encabezado_tabla{
+    background: rgb(140, 7, 158);
+    color: #fff;
+    font-weight: 900;
+}
+
+table{
+    width: 50vw;
+    border: 1px solid rgb(140, 7, 158);
+    text-align: center;
+    background: rgb(140, 7, 158);
+}
+
+td{
+    padding: 2px 4px;
+}
+
+.contenedor_horario{
+    margin-left: 25vw;
+}
+
+.filas{
+    background: #fff;
+    padding: 10px 0;
+}
+
+td:hover{
+    background: rgb(207, 154, 214);
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.categorias{
+    display: grid;
+    grid-template-columns: 32% 32% 32%;
+    column-gap: 2%;
+    text-align: center;
+    width: 90%;
+    margin-left: 10%;
+    margin-block-end: 10px;
+}
+
+.icon-catego{
+    height: 40px;
+    width: 40px;
+    transition: all 1s;
+}
+
+.icon-catego:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.icon-catego-m{
+    height: 45px;
+    width: 45px;
+    transition: all 1s;
+}
+
+.icon-catego-m:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.icon-catego-es{
+    height: 35px;
+    width: 35px;
+    transition: all 1s;
+    margin-top: 4px;
+}
+
+.icon-catego-es:hover{
+    transform: scale(1.1);
+    transition: all 1s;
+    cursor: pointer;
+}
+
+.bi-twitch{
+    margin-top: 15px;
+}
+
+.bi-twitch:hover{
+    fill: #000000;
+    transition: all 1s;
+}

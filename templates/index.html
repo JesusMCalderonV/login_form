@@ -1,0 +1,151 @@
+{% extends 'plantilla.html'%}
+
+{%block title%}Inicio{%endblock%}
+
+{%block body%}
+    <div id="catalogo" class="seccion_juegos">
+        <h2>CATALOGO DE JUEGOS</h2>
+        <hr>
+        <div class="contenedor_juegos">
+            <div class="juego">
+                <img src="{{url_for('static', filename='img/smash.jpg')}}" alt="" class="portada_juego">
+                <hr>
+                <h2>SMASH BROS</h2>
+                <br>
+                <div class="categorias">
+                    <img class="icon-catego-es" title="COMBATE" src="{{url_for('static', filename='img/combate.svg')}}" alt="">
+                    <img class="icon-catego-m" title="MULTIJUGADOR" src="{{url_for('static', filename='img/multiplayer.svg')}}" alt="">
+                    <img class="icon-catego" title="ACCIÓN" src="{{url_for('static', filename='img/action.svg')}}" alt="">
+                </div>
+                <p class="descripcion"><b>Smash Bros</b> es un juego switch, con modalidad de comabte donde nos podemos echar unas retas, pasarla divertido y practicar.</p>
+            </div>
+            <div class="juego">
+                <img src="{{url_for('static', filename='img/minecraft.jpg')}}" alt="" class="portada_juego">
+                <hr>
+                <h2>MINECRAFT</h2>
+                <br>
+                <div class="categorias">
+                    <img class="icon-catego-es" title="ESTRATEGIA" src="{{url_for('static', filename='img/strategy.svg')}}" alt="">
+                    <img class="icon-catego-m" title="MULTIJUGADOR" src="{{url_for('static', filename='img/multiplayer.svg')}}" alt="">
+                    <img class="icon-catego" title="MUNDO ABIERTO" src="{{url_for('static', filename='img/adventure.svg')}}" alt="">
+                </div>
+                <p class="descripcion"><b>MINECRAFT</b> es un juego de mundo abierto y supervivencia, en el stream podrás ver como paso diversos retos e intento construir mi casita y mantener a mis michis.</p>
+            </div>
+            <div class="juego">
+                <img src="{{url_for('static', filename='img/apex.jpg')}}" alt="" class="portada_juego">
+                <hr>
+                <h2>APEX</h2>
+                <br>
+                <div class="categorias">
+                    <img class="icon-catego-es" title="ESTRATEGIA" src="{{url_for('static', filename='img/strategy.svg')}}" alt="">
+                    <img class="icon-catego-m" title="MULTIJUGADOR" src="{{url_for('static', filename='img/multiplayer.svg')}}" alt="">
+                    <img class="icon-catego" title="ACCIÓN" src="{{url_for('static', filename='img/action.svg')}}" alt="">
+                </div>
+                <p class="descripcion" class="descripcion"><b>APEX LEGENDS</b> un shooter donde intento ganar cada partida combatiendo muchos enemigos, puedes unirte y jugar conmigo, <b>¿Llegaremos a ser los campeones?</b> ¡Averiguemos!.</p>
+            </div>
+            <div class="juego">
+                <img src="{{url_for('static', filename='img/pokemon.jpg')}}" alt="" class="portada_juego">
+                <hr>
+                <h2>POKEMON UNITE</h2>
+                <br>
+                <div class="categorias">
+                    <img class="icon-catego-es" title="COMBATE" src="{{url_for('static', filename='img/combate.svg')}}" alt="">
+                    <img class="icon-catego-m" title="MULTIJUGADOR" src="{{url_for('static', filename='img/multiplayer.svg')}}" alt="">
+                    <img class="icon-catego-es" title="ESTRATEGIA" src="{{url_for('static', filename='img/strategy.svg')}}" alt="">
+                </div>
+                <p  class="descripcion"><b>POKEMON UNITE</b> es como el LOL cute, donde enfretaremos varios enemigos, es un juego de estrategia genial, ya que lo encuentras en switch y android.</p>
+            </div>
+            <div class="juego">
+                <img src="{{url_for('static', filename='img/fortnite.jpg')}}" alt="" class="portada_juego">
+                <hr>
+                <h2>FORTNITE</h2>
+                <br>
+                <div class="categorias">
+                    <img class="icon-catego-es" title="ESTRATEGIA" src="{{url_for('static', filename='img/strategy.svg')}}" alt="">
+                    <img class="icon-catego-m" title="MULTIJUGADOR" src="{{url_for('static', filename='img/multiplayer.svg')}}" alt="">
+                    <img class="icon-catego" title="ACCIÓN" src="{{url_for('static', filename='img/action.svg')}}" alt="">
+                </div>
+                <p class="descripcion"><b>FORTNITE</b> en este juego enfrentamos a varios enemigos, podemos construir, derribar y hacer muchas cosas, esperalo proximamente</p>
+            </div>
+        </div>
+        <h2>HORARIOS</h2>
+        <hr>
+        <div id="horarios" class="contenedor_horario">
+            <table >
+                <thead>
+                    <tr>
+                        <td class="encabezado_tabla">DÍA</td>
+                        <td class="encabezado_tabla">JUEGOS</td>
+                        <TD class="encabezado_tabla">HORARIO</TD>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="fila_completa">
+                        <td class="filas">LUNES</td class="filas">
+                        <td class="filas">POKEMON UNITE, APEX, SMASH BROS</td class="filas">
+                        <td class="filas">
+                            11:00PM <i class="em em-flag-mx" aria-role="presentation" aria-label="Mexico Flag"></i>
+                            <br>
+                            12:00AM <i class="em em-flag-co" aria-role="presentation" aria-label="Colombia Flag"></i>
+                        </td class="filas">
+                    </tr>
+                    <tr class="fila_completa">
+                        <td class="filas">MARTES</td class="filas">
+                        <td class="filas">APEX, MINECRAFT</td class="filas">
+                        <td class="filas">
+                            11:00PM <i class="em em-flag-mx" aria-role="presentation" aria-label="Mexico Flag"></i>
+                            <br>
+                            12:00AM <i class="em em-flag-co" aria-role="presentation" aria-label="Colombia Flag"></i>
+                        </td class="filas">
+                    </tr>
+                    <tr class="fila_completa">
+                        <td class="filas">MIERCOLES</td class="filas">
+                        <td class="filas">SMASH BROS, FORTNITE</td class="filas">
+                        <td class="filas">
+                            11:00PM <i class="em em-flag-mx" aria-role="presentation" aria-label="Mexico Flag"></i>
+                            <br>
+                            12:00AM <i class="em em-flag-co" aria-role="presentation" aria-label="Colombia Flag"></i>
+                        </td class="filas">
+                    </tr>
+                    <tr class="fila_completa">
+                        <td class="filas">JUEVES</td class="filas">
+                        <td class="filas">APEX, SMASH BROS, POKEMON UNITE</td class="filas">
+                        <td class="filas">
+                            11:00PM <i class="em em-flag-mx" aria-role="presentation" aria-label="Mexico Flag"></i>
+                            <br>
+                            12:00AM <i class="em em-flag-co" aria-role="presentation" aria-label="Colombia Flag"></i>
+                        </td class="filas">
+                    </tr>
+                    <tr class="fila_completa">
+                        <td class="filas">VIERNES</td class="filas">
+                        <td class="filas">POKEMON UNITE, SMASH, JUEGO POR VOTACIÓN</td class="filas">
+                        <td class="filas">
+                            11:00PM <i class="em em-flag-mx" aria-role="presentation" aria-label="Mexico Flag"></i>
+                            <br>
+                            12:00AM <i class="em em-flag-co" aria-role="presentation" aria-label="Colombia Flag"></i>
+                        </td class="filas">
+                    </tr>
+                    <tr class="fila_completa">
+                        <td class="filas">SABADOS</td class="filas">
+                        <td class="filas">SMASH BROS, MINECRAFT, POKEMON UNITE</td class="filas">
+                        <td class="filas">
+                            11:00PM <i class="em em-flag-mx" aria-role="presentation" aria-label="Mexico Flag"></i>
+                            <br>
+                            12:00AM <i class="em em-flag-co" aria-role="presentation" aria-label="Colombia Flag"></i>
+                        </td class="filas">
+                    </tr>
+                    <tr class="fila_completa">
+                        <td class="filas">DOMINGOS</td class="filas">
+                        <td class="filas">JUEGO RANDOM</td class="filas">
+                        <td class="filas">
+                            11:00PM <i class="em em-flag-mx" aria-role="presentation" aria-label="Mexico Flag"></i>
+                            <br>
+                            12:00AM <i class="em em-flag-co" aria-role="presentation" aria-label="Colombia Flag"></i>
+                        </td class="filas">
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <br><br><br>
+    </div>
+{%endblock%}

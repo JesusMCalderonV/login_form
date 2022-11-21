@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{%block title%}{%endblock%}</title>
+</head>
+<body>
+    <header>
+        <div class="marca">
+            <li class="titulo"><a href="/" class="titulo_link"><h2>M U K A I</h2></a></li>
+        </div>
+        <div class="barra_navegacion">
+            <li class="link"><a href="/" class="a">inicio</a></li>
+            <li class="link"><a href="#horarios" class="a">horarios</a></li>
+            <li class="link"><a href="#catalogo" class="a">catalogo</a></li>
+            <li class="link"><a href="#propuestas" class="a">propuestas</a></li>
+            <li class="link"><a href="#conoceme" class="a">conoceme</a></li>
+        </div>
+    </header>
+    <br><br><br>
+    <img class="portada" src="{{url_for('static', filename='img/portada.jpg')}}" alt="">
+    <hr>
+    {%block body%}
+    {%endblock%}
+    <a href="https://www.twitch.tv/mukaiuwu">
+        <div class="whatsapp_espace">
+            <svg width="40px" height="40px" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" fill="#ffffff" class="bi bi-twitch">
+                <path d="M3.857 0 1 2.857v10.286h3.429V16l2.857-2.857H9.57L14.714 8V0H3.857zm9.714 7.429-2.285 2.285H9l-2 2v-2H4.429V1.143h9.142v6.286z"/>
+                <path d="M11.857 3.143h-1.143V6.57h1.143V3.143zm-3.143 0H7.571V6.57h1.143V3.143z"/>
+            </svg>
+        </div>
+    </a>
+    <div class="pie">
+        <div class="conoceme" id="conoceme">
+            <h2>¡HOLA SOY MUKAI!</h2>
+            <br>
+            <p>Soy una streamer de la plataforma twich, vivo en Mexíco, un país muy lindo, te invito a que hagas parte de esta comunidad tan hermosa como lo es la de los Dioses de la destrucción, juntos conquistaremos y cuidaremos el universo.
+            </p>
+            <br>
+            <h3>Beneficios</h3>
+            <p>
+                Al hacer parte de la comunidad disfrutarás de ratos muy agradable y un ambiente muy amistoso, en el cual puedes compartir historias, anecdotas, chistes o si eres alguien más introvertido puedes pasarla bien con los comentarios y con el resto de la comunidad
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
